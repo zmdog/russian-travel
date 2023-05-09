@@ -1,1 +1,10 @@
+/* Vendor_Fonts */
+@import "../vendor/Inter_Web/inter.css";
+
+/* Page */
 @import "../blocks/page/page.css";
+
+/* Header */
+@import "../blocks/header/header.css";
+@import "../blocks/header/__logo/header__logo.css";
+@import "../blocks/header/__lang-changer/header__lang-changer.css";

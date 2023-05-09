@@ -1,0 +1,5 @@
+.header__logo {
+    height: inherit;
+    width: 176px;
+    background: url("../../../images/1280/__logo.svg") no-repeat;
+}
