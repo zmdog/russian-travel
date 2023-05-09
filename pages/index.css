@@ -8,3 +8,4 @@
 @import "../blocks/header/header.css";
 @import "../blocks/header/__logo/header__logo.css";
 @import "../blocks/header/__lang-changer/header__lang-changer.css";
+@import "../blocks/header/__lang-link/header__lang-link.css";
