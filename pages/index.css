@@ -1,5 +1,7 @@
 /* Vendor_Fonts */
 @import "../vendor/Inter_Web/inter.css";
+/* Vendor_styles */
+@import "../vendor/normalize.css";
 
 /* Page */
 @import "../blocks/page/page.css";
@@ -8,3 +10,10 @@
 @import "../blocks/header/header.css";
 @import "../blocks/header/__logo/header__logo.css";
 @import "../blocks/header/__lang-changer/header__lang-changer.css";
+
+/* Content-Lead */
+@import "../blocks/lead/lead.css";
+@import "../blocks/lead/__caption/lead__caption.css";
+@import "../blocks/lead/__map-travel/lead__map-travel.css";
+@import "../blocks/lead/__subtitle/lead__subtitle.css";
+@import "../blocks/lead/__title/lead__title.css";

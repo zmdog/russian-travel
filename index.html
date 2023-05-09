@@ -23,7 +23,18 @@
         </ul>
     </header>
     <main class="content">
-        <section class="lead" aria-label="Маршрут путешествия"></section>
+        <section class="lead" aria-label="Маршрут путешествия">
+            <h1 class="lead__title">Путешествия по России</h1>
+            <p class="lead__subtitle">Настоящая страна не в выпусках новостей, а здесь.</p>
+                <picture>
+                    <source srcset="images/1280/map-travel.jpg" media="(min-width: 1280px)">
+                    <source srcset="images/1024/map-travel.jpg" media="(min-width: 1024px)">
+                    <source srcset="images/768/map-travel.jpg" media="(min-width: 768px)">
+                    <source srcset="images/320/map-travel.jpg" media="(min-width: 320px)">
+                    <img class="lead__map-travel" src="icon.png" alt="Недовольный кот">
+                </picture>
+                <p class="lead__caption">ваша полка — верхняя</p>
+        </section>
         <section class="intro" aria-label="Заблуждения о путешествии по России"></section>
         <section class="photo-grid" aria-label="Природа России"></section>
         <section class="places" aria-label="Места для посещения"></section>
