@@ -17,7 +17,7 @@
 3. Контроль версий: Git
 4. Библиотека: REACT(пока нет)
 
-## Ссылка на GitHub Pages:
+## Ссылка на GitHub Pages: https://zmdog.github.io/russian-travel/
 
 
 ### Спасибо за внимание!
