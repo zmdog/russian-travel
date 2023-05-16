@@ -1,3 +1,10 @@
+/* Vendor_styles */
+@import "../vendor/normalize.css";
+
+/* Mix */
+@import "../blocks/list-default/list-default.css";
+@import "../blocks/link/link.css";
+
 /* Vendor_Fonts */
 @import "../vendor/Inter_Web/inter.css";
 
