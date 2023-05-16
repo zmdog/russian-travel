@@ -13,23 +13,516 @@
 <div class="page">
     <header class="header" aria-label="Шапка">
         <div class="header__logo"></div>
-        <ul class="header__lang-changer" lang="en">
+        <ul class="list-default header__lang-changer" lang="en">
             <li>
-                <a href="#" class="header__lang-link">Ru</a>
+                <a href="#" class="header__link header__link_active">Ru</a>
             </li>
             <li>
-                <a href="#" class="header__lang-link">En</a>
+                <a href="#" lang="en" class="header__link">En</a>
             </li>
         </ul>
     </header>
     <main class="content">
-        <section class="lead" aria-label="Маршрут путешествия"></section>
-        <section class="intro" aria-label="Заблуждения о путешествии по России"></section>
-        <section class="photo-grid" aria-label="Природа России"></section>
-        <section class="places" aria-label="Места для посещения"></section>
-        <section class="cover" aria-label="Видеоистория 'До Байкала 'на собаках''"></section>
+        <section class=" lead" aria-label="Маршрут путешествия по России">
+            <h1 class="lead__title">Путешествия по России</h1>
+            <p class="lead__subtitle">Настоящая страна не в выпусках новостей, а здесь.</p>
+            <figure class="lead__figure">
+                <picture>
+                    <source
+                            media="(min-width: 1280px)"
+                            srcset="./images/1280/lead-1280.svg 1280w">
+                    <source
+                            media="(min-width: 1024px)"
+                            srcset="./images/1024/lead-1024.svg 1024w">
+                    <source
+                            media="(min-width: 768px)"
+                            srcset="./images/768/lead-768.svg 768w">
+                    <source
+                            media="(min-width: 320px)"
+                            srcset="./images/320/lead-320.svg 320w">
+                    <img class="lead__map-travel" src="images/1280/lead-1280.svg" alt="Маршрут по России">
+                </picture>
+                <figcaption class="lead__caption">ваша полка — верхняя</figcaption>
+            </figure>
+        </section>
+        <section class=" intro" aria-label="Заблуждения о путешествии по России">
+            <h2 class="intro__title">Чего мы там
+                не видели?
+            </h2>
+            <p class="intro__text">По опросам ВЦИОМ, 95% россиян мечтают куда-нибудь поехать,
+                но только 36% планируют провести отпуск в родной стране. Мол, чего мы тут, дома, не видели? На самом
+                деле, Россия — это целая вселенная с ласковым морем юга,
+                густыми лесами Саян и суровыми льдами плато Путорана. А ещё
+                увидеть все эти красоты можно
+                без миллионов на счету, загранпаспорта и многочасовых перелетов. Как, например, Вера
+                Башмакова — смелая молодая мама, которая взяла в охапку троих детей, усадила их в свою «Ладу»
+                и проехала 20 тысяч километров
+                по родной стране. Мы выбрали
+                и описали некоторые интересные места, достойные вашего отпуска.
+            </p>
+            <ul class="list-default intro__list">
+                <li><span class="intro__elem">Часовых поясов </span>11</li>
+                <li><span class="intro__elem">Объектов природного наследия ЮНЕСКО </span>12</li>
+                <li><span class="intro__elem">Объектов культурного наследия ЮНЕСКО </span>16</li>
+                <li><span class="intro__elem">Природных заповедников </span>105</li>
+                <li><span class="intro__elem">Аэропортов </span>241</li>
+            </ul>
+        </section>
+        <section class=" photo-grid" aria-label="Природа России">
+            <ul class="list-default photo-grid__photos">
+                <li>
+                    <picture>
+                        <source
+                                media="(min-width: 1280px)"
+                                srcset="./images/1280/train1-1280.jpg 1280w">
+                        <source
+                                media="(min-width: 1024px)"
+                                srcset="./images/1024/train1-1024.jpg 1024w">
+                        <source
+                                media="(min-width: 768px)"
+                                srcset="./images/768/train1-768.jpg 768w">
+                        <source
+                                media="(min-width: 320px)"
+                                srcset="./images/320/train1-320.jpg 320w">
+                        <img class="photo-grid__photo" src="./images/1280/train1-1280.jpg" alt="Вид из окна вагона">
+                    </picture>
+                </li>
+                <li>
+                    <picture>
+                        <source
+                                media="(min-width: 1280px)"
+                                srcset="./images/1280/atarva-tulsi-1280.jpg 1280w">
+                        <source
+                                media="(min-width: 1024px)"
+                                srcset="./images/1024/atarva-tulsi-1024.jpg 1024w">
+                        <source
+                                media="(min-width: 768px)"
+                                srcset="./images/768/atharva-tulsi-768.jpg 768w">
+                        <source
+                                media="(min-width: 320px)"
+                                srcset="./images/320/atharva-tulsi-320.jpg 320w">
+                        <img class="photo-grid__photo" src="./images/1280/atarva-tulsi-1280.jpg" alt="Атхарва тулси">
+                    </picture>
+                </li>
+                <li>
+                    <picture>
+                        <source
+                                media="(min-width: 1280px)"
+                                srcset="./images/1280/tuman-1280.jpg 1280w">
+                        <source
+                                media="(min-width: 1024px)"
+                                srcset="./images/1024/tuman-1024.jpg 1024w">
+                        <source
+                                media="(min-width: 768px)"
+                                srcset="./images/768/tuman-768.jpg 768w">
+                        <source
+                                media="(min-width: 320px)"
+                                srcset="./images/320/tuman-320.jpg 320w">
+                        <img class="photo-grid__photo" src="./images/1280/tuman-1280.jpg" alt="Туман">
+                    </picture>
+                </li>
+                <li>
+                    <picture>
+                        <source
+                                media="(min-width: 1280px)"
+                                srcset="./images/1280/sochi-1280.jpg 1280w">
+                        <source
+                                media="(min-width: 1024px)"
+                                srcset="./images/1024/sochi-1024.jpg 1024w">
+                        <source
+                                media="(min-width: 768px)"
+                                srcset="./images/768/sochi-768.jpg 768w">
+                        <source
+                                media="(min-width: 320px)"
+                                srcset="./images/320/sochi-320.jpg 320w">
+                        <img class="photo-grid__photo" src="./images/1280/sochi-1280.jpg" alt="Сочи">
+                    </picture>
+                </li>
+                <li>
+                    <picture>
+                        <source
+                                media="(min-width: 1280px)"
+                                srcset="./images/1280/arisa-chattasa-1280.jpg 1280w">
+                        <source
+                                media="(min-width: 1024px)"
+                                srcset="./images/1024/arisa-chattasa-1024.jpg 1024w">
+                        <source
+                                media="(min-width: 768px)"
+                                srcset="./images/768/arisa-chattasa-768.jpg 768w">
+                        <source
+                                media="(min-width: 320px)"
+                                srcset="./images/320/arisa-chattasa-320.jpg 320w">
+                        <img class="photo-grid__photo" src="./images/1280/arisa-chattasa-1280.jpg" alt="Колесо на льду">
+                    </picture>
+                </li>
+                <li>
+                    <picture>
+                        <source
+                                media="(min-width: 1280px)"
+                                srcset="./images/1280/baikal-1280.jpg 1280w">
+                        <source
+                                media="(min-width: 1024px)"
+                                srcset="./images/1024/baikal-1024.jpg 1024w">
+                        <source
+                                media="(min-width: 768px)"
+                                srcset="./images/768/baikal-768.jpg 768w">
+                        <source
+                                media="(min-width: 320px)"
+                                srcset="./images/320/baikal-320.jpg 320w">
+                        <img class="photo-grid__photo" src="./images/1280/baikal-1280.jpg" alt="Байкал">
+                    </picture>
+                </li>
+                <li>
+                    <picture>
+                        <source
+                                media="(min-width: 1280px)"
+                                srcset="./images/1280/elbrus-1280.jpg 1280w">
+                        <source
+                                media="(min-width: 1024px)"
+                                srcset="./images/1024/elbrus-1024.jpg 1024w">
+                        <source
+                                media="(min-width: 768px)"
+                                srcset="./images/768/elbrus-768.jpg 768w">
+                        <source
+                                media="(min-width: 320px)"
+                                srcset="./images/320/elbrus-320.jpg 320w">
+                        <img class="photo-grid__photo" src="./images/1280/elbrus-1280.jpg" alt="Эльбрус">
+                    </picture>
+                </li>
+                <li>
+                    <picture>
+                        <source
+                                media="(min-width: 1280px)"
+                                srcset="./images/1280/stanislav-kondratiev-1280.jpg 1280w">
+                        <source
+                                media="(min-width: 1024px)"
+                                srcset="./images/1024/stanislav-kondratiev-1024.jpg 1024w">
+                        <source
+                                media="(min-width: 768px)"
+                                srcset="./images/768/stanislav-kondratiev-768.jpg 768w">
+                        <source
+                                media="(min-width: 320px)"
+                                srcset="./images/320/stanislav-kondratiev-320.jpg 320w">
+                        <img class="photo-grid__photo" src="./images/1280/stanislav-kondratiev-1280.jpg" alt="Знак 'пешеходный переход'">
+                    </picture>
+                </li>
+                <li>
+                    <picture>
+                        <source
+                                media="(min-width: 1280px)"
+                                srcset="./images/1280/kamchatka-1280.jpg 1280w">
+                        <source
+                                media="(min-width: 1024px)"
+                                srcset="./images/1024/kamchatka-1024.jpg 1024w">
+                        <source
+                                media="(min-width: 768px)"
+                                srcset="./images/768/kamchatka-768.jpg 768w">
+                        <source
+                                media="(min-width: 320px)"
+                                srcset="./images/320/kamchatka-320.jpg 320w">
+                        <img class="photo-grid__photo" src="./images/1280/kamchatka-1280.jpg" alt="Камчатка">
+                    </picture>
+                </li>
+                <li>
+                    <picture>
+                        <source
+                                media="(min-width: 1280px)"
+                                srcset="./images/1280/kamchatka2-1280.jpg 1280w">
+                        <source
+                                media="(min-width: 1024px)"
+                                srcset="./images/1024/kamchatka2-1024.jpg 1024w">
+                        <source
+                                media="(min-width: 768px)"
+                                srcset="./images/768/kamchatka2-768.jpg 768w">
+                        <source
+                                media="(min-width: 320px)"
+                                srcset="./images/320/kamchatka2-320.jpg 320w">
+                        <img class="photo-grid__photo" src="./images/1280/kamchatka2-1280.jpg" alt="Еще одна Камчатка">
+                    </picture>
+                </li>
+                <li>
+                    <picture>
+                        <source
+                                media="(min-width: 1280px)"
+                                srcset="./images/1280/baikal2-1280.jpg 1280w">
+                        <source
+                                media="(min-width: 1024px)"
+                                srcset="./images/1024/baikal2-1024.jpg 1024w">
+                        <source
+                                media="(min-width: 768px)"
+                                srcset="./images/768/baikal2-768.jpg 768w">
+                        <source
+                                media="(min-width: 320px)"
+                                srcset="./images/320/baikal2-320.jpg 320w">
+                        <img class="photo-grid__photo" src="./images/1280/baikal2-1280.jpg" alt="Байкал">
+                    </picture>
+                </li>
+                <li>
+                    <picture>
+                        <source
+                                media="(min-width: 1280px)"
+                                srcset="./images/1280/ergaki-1280.jpg 1280w">
+                        <source
+                                media="(min-width: 1024px)"
+                                srcset="./images/1024/ergaki-1024.jpg 1024w">
+                        <source
+                                media="(min-width: 768px)"
+                                srcset="./images/768/ergaki-768.jpg 768w">
+                        <source
+                                media="(min-width: 320px)"
+                                srcset="./images/320/ergaki-320.jpg 320w">
+                        <img class="photo-grid__photo" src="./images/1280/ergaki-1280.jpg" alt="Ергаки">
+                    </picture>
+                </li>
+            </ul>
+        </section>
+        <section class="places" aria-label="Места для посещения">
+            <ul class="list-default places__places-grid">
+                <li>
+                    <article class="places__place">
+                        <h2 class="places__title">Куршская
+                            коса</h2>
+                        <div class="places__website">
+                            <p class="places__url-heading">URL</p>
+                            <a href="https://park-kosa.ru" class="link places__link">park-kosa.ru</a>
+                        </div>
+                        <picture>
+                            <source
+                                    media="(min-width: 1280px)"
+                                    srcset="./images/1280/kurshkaya-kosa-1280.jpg 1280w">
+                            <source
+                                    media="(min-width: 1024px)"
+                                    srcset="./images/1024/kurshkaya-kosa-1024.jpg 1024w">
+                            <source
+                                    media="(min-width: 768px)"
+                                    srcset="./images/768/kurshkaya-kosa-768.jpg 768w">
+                            <source
+                                    media="(min-width: 320px)"
+                                    srcset="./images/320/kurshkaya-kosa-320.jpg 320w">
+                            <img class="places__photo" src="./images/1280/kurshkaya-kosa-1280.jpg" alt="Куршская коса">
+                        </picture>
+                        <ul class="list-default places__paragraphs">
+                            <li>
+                                <p class="places__paragraph">Здесь, посреди лесов и песчаных дюн, вы сможете увидеть два водных горизонта — спокойного
+                                    Куршского залива с одной стороны
+                                    и подёрнутого рябью волн Балтийского моря с другой.
+                                    Уникальная природная зона
+                                    на краю российского анклава.
+                                </p>
+                            </li>
+                            <li>
+                                <p class="places__paragraph">На этом Калининградская область не заканчивается.
+                                    Для путешественника
+                                    и исследователя там же
+                                    по соседству — самая западная
+                                    точка России, Балтийская коса, —
+                                    и немецкое наследие россыпи
+                                    небольших приморских городов. Атмосфера здешних мест исключает суету, окуная
+                                    в спокойствие природы и запах стального, прохладного моря.
+                                </p>
+                            </li>
+                        </ul>
+                    </article>
+                </li>
+                <li>
+                    <article class="places__place">
+                        <h2 class="places__title">Кольский</h2>
+                        <div class="places__website">
+                            <p class="places__url-heading">URL</p>
+                            <a href="https://yourshot.nationalgeographic.com/photos/?keywords=kolskiy" class="link places__link">National Geographic</a>
+                        </div>
+                        <picture>
+                            <source
+                                    media="(min-width: 1280px)"
+                                    srcset="./images/1280/kolsky-1280.jpg 1280w">
+                            <source
+                                    media="(min-width: 1024px)"
+                                    srcset="./images/1024/kolsky-1024.jpg 1024w">
+                            <source
+                                    media="(min-width: 768px)"
+                                    srcset="./images/768/kolsky-768.jpg 768w">
+                            <source
+                                    media="(min-width: 320px)"
+                                    srcset="./images/320/kolsky-320.jpg 320w">
+                            <img class="places__photo" src="./images/1280/kolsky-1280.jpg" alt="Кольский полуостров">
+                        </picture>
+                        <ul class="list-default places__paragraphs">
+                            <li>
+                                <p class="places__paragraph">Почти весь полуостров находится
+                                    за Полярным кругом. Саамская тундра, от которой на юг — тайга,
+                                    а на север — Ледовитый океан, прикидывающийся Баренцевым морем.
+                                </p>
+                            </li>
+                            <li>
+                                <p class="places__paragraph">Возможно, вы смотрели Звягинцева и даже слышали
+                                    историю арктического фестиваля в Териберке. Возможно, слово
+                                    «Хибины» не осталось под снегом школьных воспоминаний об уроках
+                                    географии. Возможно, вы не интересовались пронизывающей
+                                    земную кору сверхглубокой скважиной, а от апатитов вас давно
+                                    накрывает апатия. Но ваша мечта увидеть северное сияние начинает сбываться с билетом в Мурманск.
+                                </p>
+                            </li>
+                        </ul>
+                    </article>
+                </li>
+                <li>
+                    <article class="places__place">
+                        <h2 class="places__title">Алтай</h2>
+                        <div class="places__website">
+                            <p class="places__url-heading">URL</p>
+                            <a href="https://www.youtube.com/watch?v=7ZEsoV7kWAQ" class="link places__link">YouTube</a>
+                        </div>
+                        <picture>
+                            <source
+                                    media="(min-width: 1280px)"
+                                    srcset="./images/1280/altai-1280.jpg 1280w">
+                            <source
+                                    media="(min-width: 1024px)"
+                                    srcset="./images/1024/altai-1024.jpg 1024w">
+                            <source
+                                    media="(min-width: 768px)"
+                                    srcset="./images/768/altai-768.jpg 768w">
+                            <source
+                                    media="(min-width: 320px)"
+                                    srcset="./images/320/altai-320.jpg 320w">
+                            <img class="places__photo" src="./images/1280/altai-1280.jpg" alt="Алтай">
+                        </picture>
+                        <ul class="list-default places__paragraphs">
+                            <li>
+                                <p class="places__paragraph">Алтай — одно из красивейших мест
+                                    в России. В первую очередь из-за гор: если ехать вдоль хребта, вы
+                                    увидите склоны, усыпанные соснами, горные реки и озёра.
+                                    А если вы откроете в автомобиле окна, сможете познакомиться с невидимым чудом здешних мест — горным воздухом.
+                                </p>
+                            </li>
+                            <li>
+                                <p class="places__paragraph">Климат на Алтае умеренный, поэтому ехать сюда лучше всего
+                                    летом. Так вы увидите всё разнообразие местной флоры и фауны. По лесам Алтая бродят
+                                    лоси, над хребтами летают орлы,
+                                    а на равнинах пасутся косули.
+                                    И знаменитые манулы — тоже обитатели Алтайского края.
+                                </p>
+                            </li>
+                        </ul>
+                    </article>
+                </li>
+                <li>
+                    <article class="places__place">
+                        <h2 class="places__title">Зимний Байкал</h2>
+                        <div class="places__website">
+                            <p class="places__url-heading">URL</p>
+                            <a href="https://vk.com/baikalmile" class="link places__link">https://vk.com/baikalmile</a>
+                        </div>
+                        <picture>
+                            <source
+                                    media="(min-width: 1280px)"
+                                    srcset="./images/1280/zimny-baikal-1280.jpg 1280w">
+                            <source
+                                    media="(min-width: 1024px)"
+                                    srcset="./images/1024/zimny-baikal-1024.jpg 1024w">
+                            <source
+                                    media="(min-width: 768px)"
+                                    srcset="./images/768/zimny-baikal-768.jpg 768w">
+                            <source
+                                    media="(min-width: 320px)"
+                                    srcset="./images/320/zimny-baikal-320.jpg 320w">
+                            <img class="places__photo" src="./images/1280/zimny-baikal-1280.jpg" alt="Зимний байкал">
+                        </picture>
+                        <ul class="list-default places__paragraphs">
+                            <li>
+                                <p class="places__paragraph">Всем известен Байкал как крупнейшее озеро в мире. Многие
+                                    также знают, что это самый большой источник пресной воды
+                                    и одно из красивейших мест
+                                    в России.
+                                </p>
+                            </li>
+                            <li>
+                                <p class="places__paragraph">Конечно, это всё так. Но Байкал ещё идеальное место для
+                                    соревнований по скийорингу. Это
+                                    такой вид спорта, когда лыжник привязывает себя
+                                    к мотоциклу, и тандем старается развить как можно б&#243;льшую
+                                    скорость на льду. В марте 2019 года на фестивале «Байкальская миля» был поставлен мировой рекорд — 197.011 км/ч.
+                                </p>
+                            </li>
+                        </ul>
+                    </article>
+                </li>
+                <li>
+                    <article class="places__place">
+                        <h2 class="places__title">Карелия</h2>
+                        <div class="places__website">
+                            <p class="places__url-heading">URL</p>
+                            <a href="https://vodlozero.ru" class="link places__link">https://vodlozero.ru/</a>
+                        </div>
+                        <picture>
+                            <source
+                                    media="(min-width: 1280px)"
+                                    srcset="./images/1280/karelia-1280.jpg 1280w">
+                            <source
+                                    media="(min-width: 1024px)"
+                                    srcset="./images/1024/karelia-1024.jpg 1024w">
+                            <source
+                                    media="(min-width: 768px)"
+                                    srcset="./images/768/karelia-768.jpg 768w">
+                            <source
+                                    media="(min-width: 320px)"
+                                    srcset="./images/320/karelia-320.jpg 320w">
+                            <img class="places__photo" src="./images/1280/karelia-1280.jpg" alt="Карелия">
+                        </picture>
+                        <ul class="list-default places__paragraphs">
+                            <li>
+                                <p class="places__paragraph">Сибирь заканчивается не на Урале,
+                                    а в Карелии: образующая тайгу сибирская лиственница не растёт
+                                    западнее Водлозера. Зато здесь она вымахивает на 30 метров —
+                                    леса карельских национальных парков из-за непроходимых болот никогда не знали топора.
+                                    Некоторым соснам уже больше
+                                    чем полтысячелетия. Прикоснитесь к живому существу, видевшему
+                                    солнце раньше, чем увидал его Иван Грозный. В девственном лесу
+                                    на сотню километров не встретишь тропы. А на редких тропинках
+                                    деревья в паре метров от земли помечены медвежьими когтями.
+                                    Чтобы все знали, кто тут хозяин.
+                                </p>
+                            </li>
+                        </ul>
+                    </article>
+                </li>
+            </ul>
+        </section>
+        <section class="cover" aria-label="Видеоистория 'До Байкала 'на собаках''">
+            <picture>
+                <source
+                        media="(min-width: 1280px)"
+                        srcset="./images/1280/trains-1280.jpg 1280w">
+                <source
+                        media="(min-width: 1024px)"
+                        srcset="./images/1024/trains-1024.jpg 1024w">
+                <source
+                        media="(min-width: 768px)"
+                        srcset="./images/768/trains-768.jpg 768w">
+                <source
+                        media="(min-width: 320px)"
+                        srcset="./images/320/trains-320.jpg 320w">
+                <img class="cover__photo" src="images/1280/trains-1280.jpg" alt="Ссылка 'До Байкала на собаках'">
+            </picture>
+            <a href="https://stampsy.com/na-elektrichkakh-do-baikala" class="link cover__overlay">
+                <h2 class="cover__title">До Байкала
+                    «на собаках»</h2>
+                <p class="cover__subtitle">По мотивам учебной темы
+                    о Транссибе — путешествие
+                    от столицы до Байкала на электричках.</p>
+            </a>
+        </section>
     </main>
-    <footer class="footer" aria-label="Подвал"></footer>
+    <footer class="footer" aria-label="Подвал">
+        <ul class="list-default footer__links">
+            <li><a href="https://yandex.ru/maps" class="link footer__link">Карты</a></li>
+            <li><a href="https://yandex.ru/pogoda" class="link footer__link">Погода</a></li>
+            <li><a href="https://rasp.yandex.ru" class="link footer__link">Расписание</a></li>
+            <li><a href="https://calendar.yandex.ru" class="link footer__link">Календарь</a></li>
+            <li><a href="https://travel.yandex.ru" class="link footer__link">Путешествия</a></li>
+        </ul>
+        <p class="footer__copyright">&#169; 2023. Денис</p>
+    </footer>
 </div>
 </body>
 </html>

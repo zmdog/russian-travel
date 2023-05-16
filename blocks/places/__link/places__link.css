@@ -1,0 +1,7 @@
+.places__link {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  border-bottom: solid 1px #FFF;
+  width: fit-content;
+}

@@ -1,0 +1,13 @@
+.link {
+  text-decoration: none;
+  color: #FFF;
+  transition: .3s;
+}
+
+.link:hover {
+  opacity: 0.8;
+}
+
+.footer__link:visited {
+  color: #FFF;
+}
