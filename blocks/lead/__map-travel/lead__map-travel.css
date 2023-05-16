@@ -1,5 +1,33 @@
 .lead__map-travel {
-    height: auto;
-    width: 100%;
-    margin-bottom: -4px;
+  padding:
+    calc(90.21 / 984 * 100%) /*padding-top*/
+    calc(23.64 / 984 * 100%) /*padding-right*/
+    calc(260.8 / 984 * 100%) /*padding-bottom*/
+    calc(23.27 / 984 * 100%);/*padding-left*/
+  height: auto;
+  width: 100%;
+  box-sizing: border-box;
+  vertical-align: middle;
+  background: url("../../../images/1280/train-1280.jpg") no-repeat center/cover;
+
+}
+
+@media screen and (max-width: 1024px) {
+  .lead__map-travel {
+    padding:
+      calc(85.07 / 928 * 100%) /*padding-top*/
+      calc(22.3  / 928 * 100%) /*padding-right*/
+      calc(245.9 / 928 * 100%) /*padding-bottom*/
+      calc(21.95 / 928 * 100%);/*padding-left*/
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .lead__map-travel {
+    padding:
+      calc(70.41  / 768 * 100vw) /*padding-top*/
+      calc(18.45  / 768 * 100vw) /*padding-right*/
+      calc(203.33 / 768 * 100vw) /*padding-bottom*/
+      calc(18.16  / 768 * 100vw);/*padding-left*/
+  }
 }

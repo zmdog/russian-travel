@@ -1,0 +1,17 @@
+.places__paragraphs {
+  display: grid;
+  align-content: start;
+  gap: 26px;
+}
+
+@media screen and (max-width: 768px) {
+  .places__paragraphs {
+    gap: 25px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .places__paragraphs {
+    margin: 0 16px;
+  }
+}

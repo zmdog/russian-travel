@@ -1,0 +1,34 @@
+.places__place {
+    display: grid;
+    grid-template: auto auto / 460px auto;
+    gap: 48px 40px;
+    justify-content: center;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1279px){
+    .places__place {
+        grid-template: auto auto / 440px auto;
+        gap: 48px 32px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+  .places__place {
+    grid-template-columns: 340px 352px;
+    gap: 48px 28px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .places__place {
+    grid-template-columns: 320px;
+    gap: 48px 28px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .places__place {
+    grid-template: auto / 320px;
+    gap: 33px;
+  }
+}
