@@ -3,10 +3,6 @@
   width: 100%;
 }
 
-.cover:hover {
-  cursor: pointer;
-}
-
 @media screen and (max-width: 1280px){
   .cover__background {
     min-height: calc(100vw * 740 / 1280);
