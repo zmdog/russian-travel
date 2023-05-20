@@ -1,5 +1,5 @@
 .footer__links {
-  display: inherit;
+  display: flex;
   gap: 19px;
 }
 

@@ -1,12 +1,12 @@
 .header__logo {
-  height: inherit;
   width: 176px;
-  background: url("../../../images/__logo.svg") no-repeat;
+  height: 52px;
+  background: url("../../../images/__logo.svg") no-repeat center / cover;
 }
 
 @media screen and (max-width: 320px) {
   .header__logo {
     width: 142px;
-    background-image: url("../../../images/320/__logo-320.svg");
+    height: 42px;
   }
 }
